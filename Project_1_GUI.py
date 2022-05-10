@@ -25,3 +25,4 @@ class GUI:
         print(f'Maximum: {max(self.num_list)}')
         print(f'Sum: {sum(self.num_list)}')
         print(f'Count: {len(self.num_list)}')
+        
