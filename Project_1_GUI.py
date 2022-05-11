@@ -15,8 +15,13 @@ class GUI:
         self.button_done.pack(side='left', padx=10)
 
     def enter(self):
-        num = int(self.entry_input.get())
-        self.num_list.append(num)
+        try:
+            num = int(self.entry_input.get())
+            self.num_list.append(num)
+        except ValueError:
+            print('Invalid Input')
+        except:
+            print('An Error Occurred')
         self.entry_input.delete(0, END)
 
     def done(self):
